@@ -1,0 +1,195 @@
+html * {
+  font-family: "Berlin Sans FB", fantasy;
+}
+
+html {
+  background-image: url("BGtest.png");
+  background-size: cover;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dc7b05; 
+  box-shadow: inset 1px 0 5px #853605; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #853605;
+  box-shadow: inset 1px 0 5px #5b2b2a;
+  border-radius: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 5em;
+  top: 0;
+  background-image: url("header.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  background-color: #46bbf0;
+  color: #ce5252;
+  text-shadow: -1px 1px #3f0f08;
+  padding: 1px;
+  text-align: center;
+  position: sticky;
+}
+
+ul.topnav {
+  display: flex;
+  height: 2em;
+  top: 5em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  justify-content: center;
+}
+
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 5px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+div.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+div.flex-container > div {
+  margin: 10px;
+}
+
+.jumpto {
+  list-style-type: none;
+  background-image: linear-gradient(#eca65f, #fbc571, #e7a160);
+  background-color: #eeaa61;
+  color: #56160c;
+  border-style: outset;
+  border-color: #fbc571;
+  border-width: medium;
+  border-radius: 0.5em;
+  padding: 0em 1em 0em 1em;
+  left: 0;
+  top: 6.9em;
+  bottom: 3.5vh;
+  width: 20%;
+  position: fixed;
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.jumpto li a {
+  display: block;
+  color: #56160c;
+  padding: 6px 16px;
+  text-decoration: none;
+}
+
+.jumpto li a:hover {
+  background-color: #fbc571;
+  color: #56160c;
+}
+
+.instructions {
+  background-color: #fff3ed;
+  opacity: 0.9;
+  color: #56160c;
+  top: 6.9em;
+  bottom: 3.5vh;
+  left: 20%;
+  right: 20%;
+  padding: 0em 1em 0em 1em;
+  position: fixed;
+  overflow: auto;
+}
+
+.seasonlist {
+  background-color: #eeaa61;
+  background-image: linear-gradient(#eca65f, #fbc571, #e7a160);
+  border-style: outset;
+  border-color: #fbc571;
+  border-width: medium;
+  border-radius: 0.5em;
+  color: #56160c;
+  padding: 0em 1em 0em 1em;
+  top: 6.9em;
+  bottom: 3.5vh;
+  right: 0;
+  width: 20%;
+  position: fixed;
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox .checkmark {
+  display: inline-block;
+  background-color: #fff3ed;
+  box-shadow: inset 1px 0 3px #e0c6b8;
+  margin: 0.1em;
+  font: inherit;
+  width: 0.7em;
+  height: 0.7em;
+  border: 0.12em solid #917c71;
+  border-radius: 0.2em;
+  transform: translateX(-0.15em) translateY(0.2em);
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  margin: 0.1em;
+  left: 0;
+  bottom: 0;
+  width: 0.4em;
+  height: 0.8em;
+  border: solid #56160c;
+  border-width: 0 0.3em 0.3em 0;
+  transform: rotate(45deg);
+}
+
+input[type="checkbox"]::before {
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  background-color: inset 1em 1em var(--form-control-color);
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+footer {
+  background-image: url("footer.jpeg");
+  background-size: cover;
+  background-position: top;
+  background-color: black;
+  padding: 1px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 5vh;
+}
